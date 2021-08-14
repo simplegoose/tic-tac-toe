@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tictactoe.css">
+    <title>tictactoe game</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="contentwrapper">
+            <div class="player__1">
+                <p class="player--turn">Player 1</p>
+            </div>
+            <div class="player__2">
+                <p class="player--turn">Player 2</p>
+            </div>
+
+            <div class="charselect">
+                <P class="charselect--text">
+                    Select any character below. 
+                    <br><br>
+                    <em>The first player to select 
+                        the character will be player 1.
+                    </em>
+                </P>
+
+                <p class="selected--char selected--char--x">X</p>
+                <p class="selected--char selected--char--o">O</p>
+            </div>
+
+            <div class="playerwrapper">
+                <div class="col--1">
+                    <div class="row__1 col--1-row__1 clicked"></div>
+                    <div class="row__2 col--1-row__2 clicked"></div>
+                    <div class="row__3 col--1-row__3 clicked"></div>
+                </div>
+                <div class="col--2">
+                    <div class="row__1 col--2-row__1 clicked"></div>
+                    <div class="row__2 col--2-row__2 clicked"></div>
+                    <div class="row__3 col--2-row__3 clicked"></div>
+                </div>
+                <div class="col--3">
+                    <div class="row__1 col--3-row__1 clicked"></div>
+                    <div class="row__2 col--3-row__2 clicked"></div>
+                    <div class="row__3 col--3-row__3 clicked"></div>
+                </div>
+
+            </div>
+
+            <div class="resetgame">
+                <button class="reset--game">Reset</button>
+            </div>
+
+            <div class="results">
+                <p class="player1--result">PLAYER 1: <span id="player1"></span></p>
+                <p class="player2--result">PLAYER 2: <span id="player2"></span></p>
+            </div>
+
+            <div class="buttons">
+                <button class="reset--scores">Reset scores</button>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <script src="javascript/main.js"></script>
+</body>
+</html>

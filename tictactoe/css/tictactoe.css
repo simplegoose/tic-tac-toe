@@ -1,0 +1,227 @@
+* {
+    font-family: monospace;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+body {
+    background: linear-gradient(50deg, cyan, magenta);
+}
+
+.main-div {
+    height: 600px;
+    width: 450px;
+    margin: auto;
+    border: 1px solid red;
+
+}
+
+.contentwrapper {
+    margin: auto;
+}
+
+.player__1 {
+    position: absolute;
+    background-color: rgb(56, 45, 45);
+    text-align: center;
+    top: 165px;
+    margin-left: 110px;
+    height: 50px;
+    width: 100px;
+    border-radius: 8%;
+    transition: 200ms linear;
+}
+
+.player__2 {
+    position: absolute;
+    text-align: center;
+    background-color: rgb(56, 45, 45);
+    top: 165px;
+    margin-left: 240px;
+    height: 50px;
+    width: 100px;
+    border-radius: 8%;
+    transition: 200ms linear;
+}
+
+.player--turn {
+    margin: 12px auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.charselect {
+    position: absolute;
+    visibility: hidden;
+    width: 250px;
+    height: 200px;
+    margin: 170px 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    color: cyan;
+    background-color:rgb(39, 33, 167);
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.charselect--text{
+    padding: 10px;
+}
+
+.selected--char {
+    display: inline;
+    font-size: 20px;
+    margin: 15px 15px;
+    padding: 10px 15px;
+    border: 2px solid magenta;
+    border-radius: 30%;
+}
+
+.selected--char:hover {
+    background-color: rgb(0, 9, 60);
+    color: deeppink;
+    transition: 50ms linear;
+}
+
+.playerwrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 150px;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(45deg, rgb(191, 73, 73), rgb(5, 0, 106));
+}
+
+.col--1, .col--2, .col--3 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+}
+
+.row__1, .row__2, .row__3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(198, 201, 5);
+    text-transform: uppercase;
+    line-height: 70px;
+    flex: 1;
+}
+
+.row__1 , .row__2 {
+    border-bottom: 1px solid white;
+}
+
+.col--3, .col--2 {
+    border-left: 1px solid white;
+}
+
+.results {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 300px;
+    margin: 200px 75px;
+}
+
+.player1--result {
+    width: 100px;
+    height: 50px;
+    margin: 20px auto auto 40px;
+    padding-top: 13px;
+    padding-left: 3px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 1000;
+}
+
+.player2--result {
+    width: 100px;
+    height: 50px;
+    margin: 20px auto auto auto;
+    padding-top: 13px;
+    padding-left: 3px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 1000;
+}
+
+#player1, #player2 {
+    text-decoration: underline;
+}
+
+.buttons {
+    position: absolute;
+    top: 540px;
+    margin: auto auto auto 172px;
+    height: 50px;
+}
+
+.reset--scores {
+    padding: 5px;
+    background-color: rgb(56, 45, 45);
+    border-radius: 8%;
+    color: white;
+    font-size: 13px;
+}
+
+.resetgame {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.reset--game {
+    height: inherit;
+    width: inherit;
+    padding: 5px;
+    background-color: rgb(56, 45, 45);
+    border-radius: 8%;
+    color: white;
+    font-size: 13px;
+}
+
+@media (max-width: 475px) {
+
+    body {
+        background: cyan ;
+    }
+
+    .main-div {
+        width: 300px;
+    }
+
+    .charselect{
+        margin-left: 25px;
+    }
+
+    .player__1, .player__2{
+       margin-left: 98px;
+    }
+
+    .results {
+        height: 50px;
+        width: 250px;
+        margin: 200px 20px;
+    }
+
+    .player1--result, .player2--result {
+        padding: auto;
+        margin: auto;
+    }
+
+    .resetgame {
+        height: 28px;
+        margin: 281px 20px;
+    }
+
+}
+
+
